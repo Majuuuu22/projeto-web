@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="corpo">
+    <div class="conteudo">
+        <h1>Contato</h1>
+        <p>Tem alguma dúvida sobre a cultura pernambucana? 
+            Gostaria de colaborar com nosso conteúdo ou compartilhar 
+            uma sugestão? Preencha o formulário abaixo e entre em contato 
+            conosco. Ficaremos felizes em responder e receber seu feedback!</p>
+    
+        <form class="formulario-contato">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="assunto">Pergunta ou Feedback:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="cultura-pernambucana" selected>Faça sua pergunte ou 
+                    deixe seu Feedback logo abaixo: </option>
+            </select>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar Pergunta</button>
+        </form>
+        <div class="contato-info">
+            <h2>Outras formas de contato</h2>
+            <p>E-mail: <a href="mailto:contato@culturalpernambuco.com">contato@culturalpernambuco.com</a></p>
+            <p>Telefone: (84) 9899-9999</p>
+            
+            <div class="redes-sociais">
+                <p>Redes Sociais:</p>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <span class="material-icons">instagram</span> Instagram
+                </a>
+                <a href="https://wa.me/558499999999" target="_blank" class="social-link">
+                    <span class="material-icons">whatsapp</span> WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
