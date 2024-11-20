@@ -30,19 +30,26 @@ body {
     align-items: center;
     color: black;
     font-size: 14px;
-    text-decoration: none;
     cursor: pointer;
 }
 
+
+.item-menu .material-icons {
+    font-size: 22px; 
+    color: black; 
+}
+
+.item-menu:hover .material-icons {
+    color: #ff5733; 
+}
 .icone {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     transition: background-color 0.3s;
 }
 
@@ -54,17 +61,17 @@ body {
 .item-menu:nth-child(6):hover .icone { background-color: green; }
 
 .banner {
-    height: 800px;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .banner img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 50vh;
     object-fit: cover;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 
 .conteudo {
@@ -77,10 +84,207 @@ body {
 }
 
 .botao-entrar {
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
+    
+}
+
+/*contato*/
+
+/* Estilos Gerais */
+.corpo {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background-color: #f5e6df;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 55px;
+    margin-left: auto; 
+    justify-content: flex-end; 
+    
+}
+
+.item-menu {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.item-menu:hover {
+    color: #ff5733;
+}
+
+/* Formulário de Contato */
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contato label {
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario-contato button {
+    padding: 12px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contato button:hover {
+    background-color: #c4471e;
+}
+
+/* Informações de Contato */
+.contato-info {
+    margin-top: 40px;
+}
+
+.contato-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contato-info .redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.contato-info .redes-sociais a {
+    color: #ff5733;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap:10px;
+    text-decoration: none;
+}
+
+.contato-info .redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+/* Blocos de conteúdo com links */
+.blocos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bloco {
+    display: block;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bloco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bloco img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bloco h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bloco p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .blocos {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 10px;
+    }
+
+    .contato-info .redes-sociais {
+        flex-direction: column;
+    }
 }
