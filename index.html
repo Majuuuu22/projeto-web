@@ -4,49 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Cultural</title>
-    <link rel="stylesheet" href="styles.css"
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="topo">
         <div class="logo">🌎 Teste</div>
         <div class="menu">
-            <div class="item-menu">
-                <div class="icone">🏠</div>
-                Home
-            </div>
-            <div class="item-menu">
-                <div class="icone">📄</div>
-                História
-            </div>
-            <div class="item-menu">
-                <div class="icone">📆</div>
-                Tradições
-            </div>
-            <div class="item-menu">
-                <div class="icone">🏛️</div>
-                Gastronomia
-            </div>
-            <div class="item-menu">
-                <div class="icone">📂</div>
-                Eventos
-            </div>
-            <div class="item-menu">
-                <div class="icone">✨</div>
-                Contato
-            </div>
+            <a href="index.html" class="item-menu">
+                <span class="material-icons">home</span> Home
+            </a>
+            <a href="historia.html" class="item-menu">
+                <span class="material-icons">book</span> História
+            </a>
+            <a href="tradicoes.html" class="item-menu">
+                <span class="material-icons">calendar_today</span> Tradições
+            </a>
+            <a href="gastronomia.html" class="item-menu">
+                <span class="material-icons">restaurant</span> Gastronomia
+            </a>
+            <a href="eventos.html" class="item-menu">
+                <span class="material-icons">folder</span> Eventos
+            </a>
+            <a href="contato.html" class="item-menu">
+                <span class="material-icons">mail</span> Contato
+            </a>
             <button class="botao-entrar">Entrar</button>
         </div>
     </div>
 
     <div class="banner">
-        <img src="pe.jpeg">
+        <img src="pe.webp" alt="Banner Cultural">
     </div>
 
     <div class="conteudo">
-        <h1>Testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</h1>
-        <p>Sub teste</p>
+        <h1>Informações que você pode se interessar</h1>
+        <p>Selecione um tema abaixo para mais detalhes:</p>
+
+        <div class="blocos">
+            <a href="historia.html" class="bloco">
+                <img src="historia.jpg" alt="Imagem de História">
+                <h2>História</h2>
+                <p>Clique para saber mais sobre a rica história de Pernambuco.</p>
+            </a>
+
+            <a href="tradicoes.html" class="bloco">
+                <img src="tradicoes.jpg" alt="Imagem de Tradições">
+                <h2>Tradições</h2>
+                <p>Descubra as tradições que mantêm a cultura viva.</p>
+            </a>
+
+            <a href="gastronomia.html" class="bloco">
+                <img src="gastronomia.jpg" alt="Imagem de Gastronomia">
+                <h2>Gastronomia</h2>
+                <p>Explore os sabores únicos da culinária pernambucana.</p>
+            </a>
+
+            <a href="eventos.html" class="bloco">
+                <img src="eventos.jpg" alt="Imagem de Eventos e Projetos">
+                <h2>Eventos e Projetos</h2>
+                <p>Saiba mais sobre os eventos culturais e projetos locais.</p>
+            </a>
+        </div>
     </div>
 
 </body>
