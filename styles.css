@@ -245,6 +245,11 @@ body {
     color: #333;
 }
 
+.imagem-titulo {
+    display: flex;
+    max-width: 50%; 
+}
+
 .bloco p {
     font-size: 14px;
     margin-bottom: 15px;
@@ -266,6 +271,48 @@ body {
     object-fit: cover;
 }
 
+/* Seção de gastronomia */
+.secao-gastronomia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.item-gastronomia {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.item-gastronomia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-gastronomia h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.item-gastronomia p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .secao-gastronomia {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
@@ -287,4 +334,114 @@ body {
     .contato-info .redes-sociais {
         flex-direction: column;
     }
+}
+
+
+
+body.historia1 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.logo-historia {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #002346;
+    color: #fff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.logo-imagem {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo-imagem {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.geografia-imagem {
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.bandeira-imagem{
+    width:50%;
+    margin: 5px;
+}
+/*tradições*/
+.imagem-tradicao{
+    width:18%;
+}
+.imagem-maracatu{
+    width:18%;
+    display: flex;
+}
+.imagem-bumba{
+    width:18%;
+    display:flex;
+}
+.imagem-cavalo{
+    width: 18%;
+    display:flex
 }
