@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header id="menu">
+    <div class="logo">
+        <img src="./assets/imagens/Logope .png" alt="Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span class="material-icons" id="sanduiche">menu</span>
+    </label>
+    <nav class="links">
+        <a href="index.html" class="item-menu">
+            <span class="material-icons">home</span> Home
+        </a>
+        <a href="história.html" class="item-menu">
+            <span class="material-icons">book</span> História
+        </a>
+        <a href="tradições.html" class="item-menu">
+            <span class="material-icons">calendar_today</span> Tradições
+        </a>
+        <a href="gastronomia.html" class="item-menu">
+            <span class="material-icons">restaurant</span> Gastronomia
+        </a>
+        <a href="eventos.html" class="item-menu">
+            <span class="material-icons">folder</span> Eventos
+        </a>
+        <a href="contato.html" class="item-menu">
+            <span class="material-icons">mail</span> Contato
+        </a>
+        <button class="botao-entrar">Entrar</button>   
+    </nav>
+</header>
+
+    <section class="conteudo">
+        <header id="cabecalho-ctt">
+          <h1>Contato</h1>
+          <p>Tem alguma dúvida sobre a cultura pernambucana? Gostaria de colaborar com nosso conteúdo ou compartilhar uma sugestão? Preencha o formulário abaixo e entre em contato conosco. Ficaremos felizes em responder e receber seu feedback!</p>
+        </header>
+    
+        <form class="formulario-contato">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="assunto">Pergunta ou Feedback:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="cultura-pernambucana" selected>Faça sua pergunta ou deixe seu feedback logo abaixo:</option>
+            </select>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar Pergunta</button>
+        </form>
+
+        <div class="contato-info">
+            <h2>Outras formas de contato</h2>
+            <p>E-mail: <a href="mailto:contato@culturalpernambuco.com">contato@culturalpernambuco.com</a></p>
+            <p>Telefone: (84) 9899-9999</p>
+            
+            <div class="redes-sociais">
+                <p>Redes Sociais:</p>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    Instagram
+                </a>
+                <a href="https://wa.me/558499999999" target="_blank" class="social-link">
+                  WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pernambuco Cultural - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

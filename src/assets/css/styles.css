@@ -1,0 +1,552 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.topo {
+    background-color: #f5e6df;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid #333;
+}
+
+#sanduiche{
+    opacity: 0;
+}
+
+.menu-toggle {
+    position: absolute;
+    opacity: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.item-menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0.6rem;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item-menu .material-icons {
+    font-size: 22px;
+}
+
+.item-menu:hover .material-icons {
+    color: #ff5733;
+}
+
+.icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.banner {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.botao-entrar {
+    padding: 10px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 15px;
+}
+
+.formulario-contato label {
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario-contato button {
+    padding: 12px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contato button:hover {
+    background-color: #c4471e;
+}
+
+.contato-info {
+    margin-top: 40px;
+}
+
+.contato-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contato-info .redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.contato-info .redes-sociais a {
+    color: #ff5733;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.contato-info .redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+.blocos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bloco {
+    display: block;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bloco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bloco img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bloco h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bloco p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.duvidas {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.duvidas h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.duvida {
+    margin-bottom: 20px;
+}
+
+.duvida h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.duvida p {
+    font-size: 16px;
+    color: #555;
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.secao-gastronomia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.item-gastronomia {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.item-gastronomia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-gastronomia h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.item-gastronomia p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.logo-historia {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+#anuncio {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#anuncio h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #002346;
+    color: #fff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-imagem {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo-imagem {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.geografia-imagem,
+.bandeira-imagem {
+    width: 50%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#tradicoes section, #historia section{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-tradicao,
+.imagem-maracatu,
+.imagem-bumba,
+.imagem-cavalo,
+.imagem-trad,
+.imagem-t {
+    width: 18%;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+#anuncio {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#anuncio h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#anuncio p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.container.eventos-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.events-section {
+    padding: 20px;
+    align-items: center;
+}
+
+
+.november-events {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.november-event {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.november-event h3 {
+    color: #0056b3;
+}
+
+.events-section h2 {
+    margin-bottom: 20px; 
+    text-align: center;  
+}
+
+.annual-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.annual-event {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.annual-event:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.annual-event img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.annual-event h3 {
+    color: #0056b3;
+}
+
+.receitas{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .conteudo {
+        padding: 10px;
+    }
+
+    .secao-gastronomia {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-info .redes-sociais {
+        flex-direction: column;
+    }
+
+    #sanduiche{
+        display: block;
+        opacity: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start; 
+        display: none;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .links {
+        display: flex;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+        font-size: 24px;
+    }
+
+    .blocos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .annual-event img {
+        width: 100%;
+        height: 50%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
