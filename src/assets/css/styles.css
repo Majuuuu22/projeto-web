@@ -1,6 +1,10 @@
-body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -362,6 +366,7 @@ footer {
     border-radius: 5px;
 }
 
+
 #tradicoes section, #historia section{
     margin: 1rem;
     padding: 1rem;
@@ -403,7 +408,7 @@ footer {
 .container.eventos-container {
     max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 100px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -429,6 +434,11 @@ footer {
     padding: 15px;
     width: 30%;
     border-radius: 5px;
+    text-align: center;
+}
+
+.november-event ul{
+    list-style: none;
 }
 
 .november-event h3 {
@@ -444,6 +454,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-evenly;
 }
 
@@ -452,7 +463,7 @@ footer {
     border: 1px solid #ddd;
     padding: 15px;
     width: 50%;
-    height: 400px;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -494,6 +505,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
     .topo {
         flex-direction: column;
         align-items: flex-start;
@@ -548,5 +563,26 @@ footer {
         height: 50%;
         border-radius: 5px;
         margin-bottom: 10px;
+    }
+
+    #historia section img, #tradicoes section img{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .events-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .november-events{
+        display: flex;
+        flex-direction: column;
+    }
+    .november-event{
+        width: 100%;
     }
 }
